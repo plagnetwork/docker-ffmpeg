@@ -5,7 +5,7 @@ RUN echo "deb http://http.debian.net/debian jessie-backports main contrib non-fr
 RUN apt-get update && apt-get install -y \
     ffmpeg
 
-RUN dpkg-reconfigure locales && \
+RUN apt-get install -y locales && \
     locale-gen C.UTF-8 && \
     /usr/sbin/update-locale LANG=C.UTF-8
 
