@@ -11,6 +11,4 @@ RUN dpkg-reconfigure locales && \
 
 ENV LC_ALL C.UTF-8
 
-VOLUME ["/tmp/ffmpeg"]
-
 CMD ["/bin/bash"]
