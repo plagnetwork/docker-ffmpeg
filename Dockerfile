@@ -11,4 +11,4 @@ RUN apt-get install -y locales && \
 
 ENV LC_ALL C.UTF-8
 
-CMD ["/bin/bash"]
+CMD ["/bin/cat"]
